@@ -1,2 +1,9 @@
-<h1>Home#complete</h1>
-<p>Find me in app/views/home/complete.html.erb</p>
+<% @userinfo.each do |u%>
+    <%u.username%><br>
+    <%u.usernumber%><br>
+    <%u.userpassword%><br>
+    <%u.usertype%><br>
+    <%u.userdepart%><br>
+    <%u.userarrive%><br>
+    <%u.usertime%><br>
+<%end%>
