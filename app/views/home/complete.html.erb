@@ -1,8 +1,35 @@
-<% @userinfo.each do |u|%>
-    이름: <%=u.username%><br>
-    연락처: <%=u.usernumber%><br>
-    <%=u.usertype%><br>
-    <%=u.userdepart%><br>
-    <%=u.userarrive%><br>
-    <%=u.usertime%><br>
+<% @userinfo.each do |u|%>  
+    <div class="container">
+             <div class="form-group">  
+                <label for="name">이름</label>
+                <div class="form-control"><%=u.username%></div>
+              </div>
+              
+              <div class="form-group">  
+                <label for="number">연락처</label>
+                <div class="form-control"><%=u.usernumber%></div>
+              </div>
+              
+              <div class="form-group">  
+                <label for="usertype">이사종류</label>
+                <div class="form-control"><%=u.usertype%></div>
+              </div>
+              
+              <div class="form-group">  
+                <label for="depart">출발지</label>
+                <div class="form-control"><%=u.userdepart%></div>
+              </div>
+              
+              <div class="form-group">  
+                <label for="arrive">도착지</label>
+                <div class="form-control"><%=u.userarrive%></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="time">날짜</label>
+                  <div class="form-control"><%=u.usertime%></div>
+              </div>
+    </div>
+              
+    
 <%end%>
