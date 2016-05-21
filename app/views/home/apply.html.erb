@@ -1,3 +1,4 @@
+<div class="container">
 <form action="/home/write">
               <div class="form-group">  
                 <label for="name">이름</label>
@@ -15,7 +16,7 @@
               </div>
               
               <div class="form-group">
-                <label for="user_type"></label>
+                <label for="user_type">이사 종류</label>
                 <input type="text" name="usertype" class="form-control" id="user_type" placeholder="이사 종류를 입력해 주세요">
               </div>
               
@@ -31,9 +32,13 @@
               
               <div class="form-group">
                 <label for="time">날짜</label>
-                <input type="text" name="usertime" class="form-control" id="time" placeholder="이사 날짜를 입력해주세요">
+  
+                <input style="width: 50%" type="date" name="userdate" class="form-control" id="date" placeholder="이사 날짜를 입력해주세요">
+                <input style="width: 50%" type="time" name="usertime" class="form-control" id="time" placeholder="이사 시간를 입력해주세요">
+               
               </div>
               
 
               <button type="submit" class="btn btn-default">확인</button>
 </form>
+</div>

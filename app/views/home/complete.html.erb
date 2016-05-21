@@ -1,9 +1,8 @@
-<% @userinfo.each do |u%>
-    <%u.username%><br>
-    <%u.usernumber%><br>
-    <%u.userpassword%><br>
-    <%u.usertype%><br>
-    <%u.userdepart%><br>
-    <%u.userarrive%><br>
-    <%u.usertime%><br>
+<% @userinfo.each do |u|%>
+    이름: <%=u.username%><br>
+    연락처: <%=u.usernumber%><br>
+    <%=u.usertype%><br>
+    <%=u.userdepart%><br>
+    <%=u.userarrive%><br>
+    <%=u.usertime%><br>
 <%end%>

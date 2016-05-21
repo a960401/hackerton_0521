@@ -15,11 +15,13 @@ ActiveRecord::Schema.define(version: 20160521065712) do
 
   create_table "userinfos", force: :cascade do |t|
     t.string   "username"
-    t.integer  "usernumber"
+    t.string   "usernumber"
     t.integer  "userpassword"
     t.string   "usertype"
     t.string   "userdepart"
     t.string   "userarrive"
+    t.date     "userdate"
+    t.time     "usertime"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
