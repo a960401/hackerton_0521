@@ -104,7 +104,7 @@
 		<div class="shadow"></div>
 	</div><!-- end top-wizard -->
     
-	<form name="example-1" id="wrapped" action="survey_send_1.php" method="POST">
+	<form name="example-1" id="wrapped" action="home/write" method="POST">
 		<div id="middle-wizard">
 			<div class="step">
 				<div class="row">
@@ -116,12 +116,11 @@
 							<ul class="data-list">
 								<li>
 								<div class="styled-select">
-									<select class="form-control required" name="country">
+									<select class="form-control required" name="depart_country">
 										<option value="" selected>출발지</option>
-										<option value="Europe">서울시</option>
-										<option value="Asia">대구시</option>
-										<option value="North America">인천시</option>
-										<option value="South America">South America</option>
+										<option value="서울시">서울시</option>
+										<option value="대구시">대구시</option>
+										<option value="인천시">인천시</option>
 									</select>
 								</div>
 								</li>
@@ -131,12 +130,35 @@
 							<ul class="data-list">
 								<li>
 								<div class="styled-select">
-									<select class="form-control required" name="country">
+									<select class="form-control required" name="depart_region">
 										<option value="" selected>군, 구</option>
-										<option value="Europe">서울시</option>
-										<option value="Asia">대구시</option>
-										<option value="North America">인천시</option>
-										<option value="South America">South America</option>
+										<option value="종로구">종로구</option>
+										<option value="중구">중구</option>
+										<option value="용산구">용산구</option>
+										<option value="성동구">성동구</option>
+										<option value="광진구">광진구</option>
+										<option value="동대문구">동대문구</option>
+										<option value="중랑구">중랑구</option>
+										<option value="성북구">성북구</option>
+										<option value="강북구">강북구</option>
+										<option value="도봉구">동봉구</option>
+										<option value="노원구">노원구</option>
+										<option value="은평구">은평구</option>
+										<option value="서대문구">서대문구</option>
+										<option value="마포구">마포구</option>
+										<option value="양천구">양천구</option>
+										<option value="강서구">강서구</option>
+										<option value="구로구">구로구</option>
+										<option value="금천구">금천구</option>
+										<option value="영등포구">영등포구</option>
+										<option value="동작구">동작구</option>
+										<option value="관악구">관악구</option>
+										<option value="서초구">서초구</option>
+										<option value="강남구">강남구</option>
+										<option value="송파구">송파구</option>
+										<option value="강동구">강동구</option>
+										
+					
 									</select>
 								</div>
 								</li>
@@ -147,12 +169,11 @@
 							<ul class="data-list">
 								<li>
 								<div class="styled-select">
-									<select class="form-control required" name="country">
+									<select class="form-control required" name="arrive_country">
 										<option value="" selected>도착지</option>
-										<option value="Europe">서울시</option>
-										<option value="Asia">대구시</option>
-										<option value="North America">인천시</option>
-										<option value="South America">South America</option>
+										<option value="서울시">서울시</option>
+										<option value="대구시">대구시</option>
+										<option value="인천시">인천시</option>
 									</select>
 								</div>
 								</li>
@@ -162,12 +183,33 @@
 							<ul class="data-list">
 								<li>
 								<div class="styled-select">
-									<select class="form-control required" name="country">
+									<select class="form-control required" name="arrive_region">
 										<option value="" selected>군, 구</option>
-										<option value="Europe">서울시</option>
-										<option value="Asia">대구시</option>
-										<option value="North America">인천시</option>
-										<option value="South America">South America</option>
+										<option value="종로구">종로구</option>
+										<option value="중구">중구</option>
+										<option value="용산구">용산구</option>
+										<option value="성동구">성동구</option>
+										<option value="광진구">광진구</option>
+										<option value="동대문구">동대문구</option>
+										<option value="중랑구">중랑구</option>
+										<option value="성북구">성북구</option>
+										<option value="강북구">강북구</option>
+										<option value="도봉구">동봉구</option>
+										<option value="노원구">노원구</option>
+										<option value="은평구">은평구</option>
+										<option value="서대문구">서대문구</option>
+										<option value="마포구">마포구</option>
+										<option value="양천구">양천구</option>
+										<option value="강서구">강서구</option>
+										<option value="구로구">구로구</option>
+										<option value="금천구">금천구</option>
+										<option value="영등포구">영등포구</option>
+										<option value="동작구">동작구</option>
+										<option value="관악구">관악구</option>
+										<option value="서초구">서초구</option>
+										<option value="강남구">강남구</option>
+										<option value="송파구">송파구</option>
+										<option value="강동구">강동구</option>
 									</select>
 								</div>
 								</li>
@@ -175,10 +217,18 @@
 						</div>
 						<h3 class="col-md-10"></h3> 
                       	<h3 class="col-md-10">이사 날짜를 알려주세요</h3>
+                      		<div class="col-xs-6">
+                    			<input type="date" name="userdate" class="form-control" id="date" placeholder="이사 날짜를 입력해주세요">
+                  			</div>
+                 		    <div class="col-xs-6">
+                    			<input type="time" name="usertime" class="form-control" id="time" placeholder="이사 시간를 입력해주세요">
+                  			</div>
                       	<h3 class="col-md-10">원하시는 이사 종류를 선택해주세요</h3>
 						<ul class="data-list floated clearfix">
-							<li><input name="gender" type="radio" class="required check_radio" value="Male"><h4><label class="label_gender" data-toggle="popover" data-placement="right" data-content="포장 및 상하차는 직접하며, 트럭으로 이사짐을 배달만 해줍니다">용달이사</label></h4></li>
-							<li><input name="gender" type="radio" class="required check_radio" value="Female"><h4><label class="label_gender" data-toggle="popover" data-placement="right" data-content="기사님께서 짐도 함께 옮겨 주십니다. 포장은 직접 해놓으셔야합니다.">일반이사</label></h4></li>
+							<li><input name="move" value="포장이사" type="radio" class="required check_radio" ><h4><label class="label_gender" data-toggle="popover" data-placement="right" 
+							data-content="포장 및 상하차는 직접하며, 트럭으로 이사짐을 배달만 해줍니다">용달이사</label></h4></li>
+							<li><input name="move" value="일반이사" type="radio" class="required check_radio" ><h4><label class="label_gender" data-toggle="popover" data-placement="right" 
+							data-content="기사님께서 짐도 함께 옮겨 주십니다. 포장은 직접 해놓으셔야합니다.">일반이사</label></h4></li>
 						</ul>
 						
 					</div><!-- end col-md-12 --> 
@@ -218,9 +268,10 @@
 				<div class="col-md-10">
 					<h3>Please rate your overall satisfaction about the service provided.</h3>
 					<ul class="data-list">
-							<li><input type="text" name="firstname" class="required form-control" placeholder="성함"></li>
-							<li><input type="text" name="lastname" class="required form-control" placeholder="연락처"></li>
-							<li><input type="email" name="email" class="required form-control" placeholder="Your Email"></li>
+							<li><input type="text" name="username" class="required form-control" placeholder="성함"></li>
+							<li><input type="text" name="phone_number" class="required form-control" placeholder="연락처"></li>
+							<li><input type="email" name="email" class="required form-control" placeholder="이메일"></li>
+							<li><input type="password" name="password" class="required form-control" placeholder="임시 비밀번호 네자리"></li>
 						</ul>
 					<!--ul class="data-list-2">
 						<li><input name="rate" type="radio" class="required check_radio" value="Not Satisfied"><label>Not Satisfied</label></li>
@@ -235,10 +286,10 @@
 				<div class="col-md-10">
 					<h3>짐을 체크해주세요</h3>
 					<ul class="data-list-2">
-						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="Google"><label>침대</label></li>
-						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="A friend of mine"><label>책상(대)</label></li>
-						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="Print advertise"><label>의자</label></li>
-						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="Newspaper"><label>Newspaper</label></li>
+						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="침대"><label>침대</label></li>
+						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="책상(대)"><label>책상(대)</label></li>
+						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="의자"><label>의자</label></li>
+						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="냉장고"><label>냉장고</label></li>
 					</ul>
 				</div>
 			</div><!-- end step -->

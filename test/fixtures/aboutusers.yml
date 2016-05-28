@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  depart_country: MyString
+  depart_region: MyString
+  arrive_country: MyString
+  arrive_region: MyString
+  car_move: MyString
+  original_move: MyString
+  username: MyString
+  phone_number: MyString
+  email: MyString
+
+two:
+  depart_country: MyString
+  depart_region: MyString
+  arrive_country: MyString
+  arrive_region: MyString
+  car_move: MyString
+  original_move: MyString
+  username: MyString
+  phone_number: MyString
+  email: MyString
