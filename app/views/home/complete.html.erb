@@ -62,19 +62,18 @@
 
 </head>
 <body>
-  
+ 
 <section id="top-area">
 	<header>
-         <div class="container">
+              <div class="container">
             <div class="row">
-        	<div class="col-md-4 col-xs-3" id="logo"><a href="index.html">Planio Survey template</a></div>
-            
+        	<div class="col-md-4 col-xs-3">
+        	    <a href="/"><img src="/assets/logo.png"/></a></div>
             <div class="btn-responsive-menu"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </div>
 
             <nav class="col-md-8 col-xs-9" id="top-nav">
             	<ul>
-                    <li><a href="#" data-toggle="modal" data-target="#myModal">About</a></li>
-                    <li><a href="#" id="purchase">Purchase this template</a></li>
+                    <li><a href="/home/pass_check" id="purchase">예약현황확인</a></li>
                </ul>
             </nav><!-- End Nav -->
             
@@ -82,9 +81,17 @@
          </div><!-- End container -->
         </header> <!-- End header -->
         	
-          
+        <div class="container">
+             <div class="row">
+                 <div class="col-md-12 main-title">
+                 <h1>개인신청확인</h1>
+                 <h4 style="margin-top:20px; text-align:center;"> </h4>
+                </div>
+       		</div>
+        </div>
           
  </section>   
+<br><br>
 
 <section class="container" id="main">
 
@@ -94,43 +101,43 @@
     <br><br>
     
     <div class="container">
-             <div class="form-group">  
+             <div class="form-group" style="width: 80%; margin-left:auto; margin-right:auto">  
                 <label for="name">이름</label>
                 <div class="form-control required"><%=u.username%></div>
               </div>
               
-              <div class="form-group">  
+              <div class="form-group" style="width: 80%; margin-left:auto; margin-right:auto">  
                 <label for="number">연락처</label>
                 <div class="required form-control"><%=u.phone_number%></div>
               </div>
               
-              <div class="form-roup">  
+              <div class="form-group" style="width: 80%; margin-left:auto; margin-right:auto"ㅁ>  
                 <label for="usertype">이사종류</label>
                 <div class="required form-control"><%=u.move%></div>
               </div>
               
-              <div class="form-group">  
+              <div class="form-group" style="width: 80%; margin-left:auto; margin-right:auto">  
                 <label for="depart">출발지</label>
                 <div class="required form-control"><%=u.depart_country%>&nbsp; <%=u.depart_region%></div>
               </div>
               
-              <div class="form-group">  
+              <div class="form-group" style="width: 80%; margin-left:auto; margin-right:auto">  
                 <label for="arrive">도착지</label>
                 <div class="required form-control"><%=u.arrive_country%>&nbsp; <%=u.arrive_region%></div>
               </div>
               
-              <div class="form-group">
+              <div class="form-group" style="width: 80%; margin-left:auto; margin-right:auto">
                 <label for="time">날짜</label>
                   <div class="required form-control"><%=u.userdate%>&nbsp;<%=u.usertime.to_s(:time)%></div>
               </div>
               
               
-              <!--<div class="form-group">-->
+              <!--<div class="form-group" style="width: 80%; margin-left:auto; margin-right:auto">-->
               <!--  <label for="password">비밀번호</label>-->
               <!--    <div class="required form-control"><%#=u.userpassword%>&nbsp;<%#=u.userpassword%></div>-->
               <!--</div>-->
               
-              <div class="form-group">  
+              <div class="form-group" style="width: 80%; margin-left:auto; margin-right:auto">  
                 <label for="arrive">이사물품</label></label>
                 <div class="required form-control">
                   <%=u.question_1%>
@@ -138,12 +145,8 @@
               </div>
     </div>
     <%# end %>
-	
-		<div id="bottom-wizard">
-			<button type="button" name="backward" class="backward">Backward</button>
-			<button type="button" name="forward" class="forward">Forward </button>
-		</div><!-- end bottom-wizard -->
-	</form>
+	  <br><br>
+		</form>
     
 </div><!-- end Survey container -->
 

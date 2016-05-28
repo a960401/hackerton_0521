@@ -1,9 +1,150 @@
-<form action="/home/check/" method="POST">
-        <div class="form-group">
-            <label for="number">핸드폰 번호를 입력해주세요</label>
-					 <br><br>
-					 <input type="text" name="phone_number2" class="required form-control" placeholder="핸드폰 번호 입력해 주세요">
-				    
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<html lang="en">
+<!--<![endif]-->
+<head>
 
-		</div>
-</form>
+<!-- Basic Page Needs -->
+<meta charset="utf-8">
+<title>ANNOVA Survey Responsive Template</title>
+<meta name="description" content="">
+<meta name="author" content="Ansonika">
+
+<!-- Favicons-->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/font-awesome/css/font-awesome.css" rel="stylesheet" >
+<link href="/css/socialize-bookmarks.css" rel="stylesheet">
+<link href="/js/fancybox/source/jquery.fancybox.css?v=2.1.4" rel="stylesheet">
+<link href="/check_radio/skins/square/aero.css" rel="stylesheet">
+
+<!-- Toggle Switch -->
+<link rel="stylesheet" href="/css/jquery.switch.css">
+
+<!-- Owl Carousel Assets -->
+<link href="/css/owl.carousel.css" rel="stylesheet">
+<link href="/css/owl.theme.css" rel="stylesheet">
+
+<!-- Google web font -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Jquery -->
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/jquery-ui-1.8.22.min.js"></script>
+
+<!-- Wizard-->
+<script src="/js/jquery.wizard.js"></script>
+
+<!-- Radio and checkbox styles -->
+<script src="/check_radio/jquery.icheck.js"></script>
+
+<!-- HTML5 and CSS3-in older browsers-->
+<script src="/js/modernizr.custom.17475.js"></script>
+
+<!-- Support media queries for IE8 -->
+<script src="/js/respond.min.js"></script>
+
+
+</head>
+<body>
+ 
+<section id="top-area">
+	<header>
+              <div class="container">
+            <div class="row">
+        	<div class="col-md-4 col-xs-3">
+        	    <a href="/"><img src="/assets/logo.png"/></a></div>
+            <div class="btn-responsive-menu"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </div>
+
+            <nav class="col-md-8 col-xs-9" id="top-nav">
+            	<ul>
+                    <li><a href="/home/pass_check" id="purchase">예약현황확인</a></li>
+               </ul>
+            </nav><!-- End Nav -->
+            
+         </div><!-- End row -->
+         </div><!-- End container -->
+        </header> <!-- End header -->
+        	
+        <div class="container">
+             <div class="row">
+                 <div class="col-md-12 main-title">
+                 <h1>예약신청확인</h1>
+                 <h4 style="margin-top:20px; text-align:center;"> </h4>
+                </div>
+       		</div>
+        </div>
+          
+ </section>   
+<br><br>
+
+<section class="container" id="main">
+
+<!-- Start Survey container -->
+    <div id="survey_container">
+        <br><br>
+    
+        <form action="/home/check/" method="POST">
+                <div class="form-group" style="height:150px; margin:auto;">
+                    <h4 style="width: 80%; margin-left:auto; margin-right:auto">핸드폰 번호를 입력해주세요</h4>
+        					 <br>
+        					 <input type="text" style="width: 80%; margin-left:auto; margin-right:auto" name="phone_number2" class="required form-control" placeholder="핸드폰 번호 입력해 주세요">
+        		</div>
+        		
+                <div class="form-group" style="height:650px; margin:auto;">
+                    <h4 style="width: 80%; margin-left:auto; margin-right:auto">추천업체</h4>
+        			<br>
+            	    <div class="col-md-12 col-sm-12 add_bottom_30 box">
+                        <img src="/assets/2424.png" alt="Icon" style = "width: 80%; margin-left:auto; margin-right:auto">
+                        <br>  <br>
+                        <img src="/assets/2424.png" alt="Icon" style = "width: 80%; margin-left:auto; margin-right:auto"></p>
+                    </div>		 
+        		</div>
+        </form>
+    </div>
+    
+    
+
+
+	</form>
+    
+</div><!-- end Survey container -->
+
+<!-- OTHER JS --> 
+<script src="/js/jquery.validate.js"></script>
+<script src="/js/jquery.placeholder.js"></script>
+<script src="/js/jquery.tweet.min.js"></script>
+<script src="/js/jquery.bxslider.min.js"></script>
+<script src="/js/quantity-bt.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/retina.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/functions.js"></script>
+
+<!-- FANCYBOX -->
+<script  src="/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.4" type="text/javascript"></script> 
+<script src="/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5" type="text/javascript"></script> 
+<script src="/js/fancy_func.js" type="text/javascript"></script> 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
+
+</body>
+</html>
