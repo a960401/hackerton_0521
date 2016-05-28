@@ -12,6 +12,8 @@ class CreateAboutusers < ActiveRecord::Migration
       t.date :userdate
       t.time :usertime
       t.string :question_1
+      t.string :phone_number2
+      
       t.timestamps null: false
     end
   end

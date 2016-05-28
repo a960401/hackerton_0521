@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20160527095046) do
     t.date     "userdate"
     t.time     "usertime"
     t.string   "question_1"
+    t.string   "phone_number2"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end

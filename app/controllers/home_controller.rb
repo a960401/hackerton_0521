@@ -15,11 +15,13 @@ class HomeController < ApplicationController
     p.userdate=params[:userdate]
     p.usertime=params[:usertime]
     p.question_1=params[:question_1]
+
     p.save
-    redirect_to "/home/complete"
+    redirect_to "/home/check"
   end
   def apply
   end
+
 
   def matching
   end
@@ -28,12 +30,26 @@ class HomeController < ApplicationController
   end
 
   def complete
-    @aboutuser=Aboutuser.all
-    time=Time.now
-    time.to_formatted_s(:db)
+    @aboutuser=Aboutuser.find(params[:id])
+   
     
   end
 
+  def check
+    logger.debug("=========CHECK=======")
+    logger.debug(params[:phone_number2])
+    
+    u = Aboutuser.where(phone_number: params[:phone_number2]).first
+	  unless u.nil?
+		  redirect_to "/home/complete/#{u.id}"
+	  else
+	    redirect_to "/home/pass_check"
+	  end
+	  
+  end
+  
   def reserve_list
   end
+  
+  
 end
