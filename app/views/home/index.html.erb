@@ -286,10 +286,11 @@
 				<div class="col-md-10">
 					<h3>짐을 체크해주세요</h3>
 					<ul class="data-list-2">
-						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="침대"><label>침대</label></li>
-						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="책상(대)"><label>책상(대)</label></li>
-						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="의자"><label>의자</label></li>
-						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="냉장고"><label>냉장고</label></li>
+						<%b=Array.new%>
+						<%b=['침대', '책상(대)', '책상(중)', '책상(소)', '의자', '냉장고']%>
+						<%b.each do |x|%>
+						<li><input name="question_1[]" type="checkbox" class="required check_radio" value="침대"><label><%=x%><label></li>
+						<% end %>
 					</ul>
 				</div>
 			</div><!-- end step -->
